@@ -15,14 +15,11 @@ int main()
     l.push_back(7);
     l.push_back(8);
     l.push_back(9);
-    // l.insert(2,2);
-    // l.insert(10,0);
-    // l.pop_front();
-    // l.remove(10);
-    // l.pop_back();
+   
 
     Node *head=l.begin();
-    while(head!=NULL){
+   
+     while(head!=NULL){
         cout<<head->getdata()<<"->";
 
         head=head->next;
@@ -36,23 +33,6 @@ int main()
 
         head=head->next;
     }
-
-    // int key;
-    // cin>>key;
-    // if(l.search(key)){
-    //     cout<<"element found"<<endl;
-    // }
-    // else
-    // cout<<"not found"<<endl;
-
-    // if(l.SearchRec(head,key)){
-    //     cout<<"element found"<<endl;
-    // }
-    // else
-    // cout<<"not found"<<endl;
-
-    // cout<<l.SearchIndexRec(key)<<endl;
-
 
  return 0;
 }
