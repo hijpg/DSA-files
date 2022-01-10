@@ -27,6 +27,31 @@ public:
 
    List() : head(NULL), tail(NULL){}
 
+    void push_front(int data){
+        if(head==NULL){
+            Node * n = new Node(data);
+            head = tail = n;
+        }
+        else{
+            Node * n = new Node(data);
+            n->next = head;
+            head = n;
+        }
+    }   
+
+    void push_back(int data){
+
+        if(head==NULL){
+            Node * n = new Node(data);
+            head = tail = n;
+        }
+        else{
+            Node * n = new Node(data);
+            tail->next = n;
+            tail = n;
+        }
+    }
+    
     void reverse(Node*head){
         Node*Curr = head;
         Node*Prev = NULL;
